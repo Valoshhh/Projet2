@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.3.7.2 (Linux)"/>
+	<meta name="created" content="2023-10-09T11:34:50.576160931"/>
+	<meta name="changed" content="00:00:00"/>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }
+	</style>
+</head>
+
+<body lang="fr-FR" link="#000080" vlink="#800000" dir="ltr">
+	<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+	<!--HEADER-->
+		<header class="header">
+			
+				<img class="header__logo" src="logo-cloitre.png"/>
+
+			<form class="header__form">  
+				<input type="button" class="button" name="fname" value="N'importe où">
+				<input type="button" class="button" name="fname" value="Une semaine">
+				<input type="button" id="button1" name="lname" value="Ajouter des voyageurs">
+				<input type="submit" value="Submit">
+			</form> 
+			<button class="header__logement">Mettre son logement sur AIRBNB</button>
+			<button class="header__langues">
+				<svg xmlns="http://www.w3.org/2000/svg" height="2rem" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+				<path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z"/>
+				</svg>
+			</button>
+			<button class="header__connexion">
+				<i class="fa-solid fa-user"></i>
+			</button>	
+	</header>
+
+	<!--icone bar-->
+	<div class="container_icone">
+        <div class="icones">
+            <div class="icone">  
+              <i class="fa-solid fa-water-ladder"></i>
+                 <p>Piscines</p>        
+            </div>
+            <div class="icone">  
+              <i class="fa-solid fa-mountain-sun"></i>
+               <p>Montagnes</p>      
+            </div>
+            <div class="icone">  
+              <i class="fa-solid fa-city"></i>
+               <p>Centre-ville</p>      
+            </div>
+            <div class="icone">  
+              <i class="fa-solid fa-wheelchair"></i>
+               <p>Maison adapté</p>      
+            </div>
+		<button><i class="fa-solid fa-filter"> Filtres </i> </button>
+	      </div>
+  </div>
+
+<!--MAIN CONTENT-->
+<main>
+  <!-- 1er CAROUSEL from : https://codepen.io/search/pens?q=carousel+without+JS  -->
+
+  <div class="carousel">
+    <div class="carousel-inner">
+        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+        <div class="carousel-item">
+            <img src="maison-adaptee.jpg">
+        </div>
+        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item">
+            <img src="maison-camping.jpeg">
+        </div>
+        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item">
+            <img src="maison-plage.jpg">
+        </div>
+        <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+        <label for="carousel-2" class="carousel-control next control-1">›</label>
+        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+        <label for="carousel-3" class="carousel-control next control-2">›</label>
+        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+        <label for="carousel-1" class="carousel-control next control-3">›</label>
+        <ol class="carousel-indicators">
+            <li>
+                <label for="carousel-1" class="carousel-bullet">•</label>
+            </li>
+            <li>
+                <label for="carousel-2" class="carousel-bullet">•</label>
+            </li>
+            <li>
+                <label for="carousel-3" class="carousel-bullet">•</label>
+            </li>
+        </ol>
+    </div>
+</div>
+
+<!-- 2e CAROUSEL-->
+<div class="carousell">
+  <div class="carousell-inner">
+      <input class="carousell-open" type="radio" id="carousell-1" name="carousell" aria-hidden="true" hidden="" checked="checked">
+      <div class="carousell-item">
+          <img src="maison-adaptee.jpg">
+      </div>
+      <input class="carousell-open" type="radio" id="carousell-2" name="carousell" aria-hidden="true" hidden="">
+      <div class="carousell-item">
+          <img src="maison-camping.jpeg">
+      </div>
+      <input class="carousell-open" type="radio" id="carousell-3" name="carousell" aria-hidden="true" hidden="">
+      <div class="carousell-item">
+          <img src="maison-plage.jpg">
+      </div>
+      <label for="carousell-3" class="carousell-control prev control-1">‹</label>
+      <label for="carousell-2" class="carousell-control next control-1">›</label>
+      <label for="carousell-1" class="carousell-control prev control-2">‹</label>
+      <label for="carousell-3" class="carousell-control next control-2">›</label>
+      <label for="carousell-2" class="carousell-control prev control-3">‹</label>
+      <label for="carousell-1" class="carousell-control next control-3">›</label>
+      <ol class="carousell-indicators">
+          <li>
+              <label for="carousell-1" class="carousell-bullet">•</label>
+          </li>
+          <li>
+              <label for="carousell-2" class="carousell-bullet">•</label>
+          </li>
+          <li>
+              <label for="carousell-3" class="carousell-bullet">•</label>
+          </li>
+      </ol>
+  </div>
+</div>
+
+<!--3e CAROUSEL-->
+
+<div class="carouselll">
+  <div class="carouselll-inner">
+      <input class="carouselll-open" type="radio" id="carouselll-1" name="carouselll" aria-hidden="true" hidden="" checked="checked">
+      <div class="carouselll-item">
+          <img src="maison-adaptee.jpg">
+      </div>
+      <input class="carouselll-open" type="radio" id="carouselll-2" name="carouselll" aria-hidden="true" hidden="">
+      <div class="carouselll-item">
+          <img src="maison-camping.jpeg">
+      </div>
+      <input class="carouselll-open" type="radio" id="carouselll-3" name="carouselll" aria-hidden="true" hidden="">
+      <div class="carouselll-item">
+          <img src="maison-plage.jpg">
+      </div>
+      <label for="carouselll-3" class="carouselll-control prev control-1">‹</label>
+      <label for="carouselll-2" class="carouselll-control next control-1">›</label>
+      <label for="carouselll-1" class="carouselll-control prev control-2">‹</label>
+      <label for="carouselll-3" class="carouselll-control next control-2">›</label>
+      <label for="carouselll-2" class="carouselll-control prev control-3">‹</label>
+      <label for="carouselll-1" class="carouselll-control next control-3">›</label>
+      <ol class="carouselll-indicators">
+          <li>
+              <label for="carouselll-1" class="carouselll-bullet">•</label>
+          </li>
+          <li>
+              <label for="carouselll-2" class="carouselll-bullet">•</label>
+          </li>
+          <li>
+              <label for="carouselll-3" class="carouselll-bullet">•</label>
+          </li>
+      </ol>
+  </div>
+</div>
+
+<!--4e CAROUSEL-->
+
+<div class="carousellll">
+  <div class="carousellll-inner">
+      <input class="carousellll-open" type="radio" id="carousellll-1" name="carousellll" aria-hidden="true" hidden="" checked="checked">
+      <div class="carousellll-item">
+          <img src="maison-adaptee.jpg">
+      </div>
+      <input class="carousellll-open" type="radio" id="carousellll-2" name="carousellll" aria-hidden="true" hidden="">
+      <div class="carousellll-item">
+          <img src="maison-camping.jpeg">
+      </div>
+      <input class="carousellll-open" type="radio" id="carousellll-3" name="carousellll" aria-hidden="true" hidden="">
+      <div class="carousellll-item">
+          <img src="maison-plage.jpg">
+      </div>
+      <label for="carousellll-3" class="carousellll-control prev control-1">‹</label>
+      <label for="carousellll-2" class="carousellll-control next control-1">›</label>
+      <label for="carousellll-1" class="carousellll-control prev control-2">‹</label>
+      <label for="carousellll-3" class="carousellll-control next control-2">›</label>
+      <label for="carousellll-2" class="carousellll-control prev control-3">‹</label>
+      <label for="carousellll-1" class="carousellll-control next control-3">›</label>
+      <ol class="carousellll-indicators">
+          <li>
+              <label for="carousellll-1" class="carousellll-bullet">•</label>
+          </li>
+          <li>
+              <label for="carousellll-2" class="carousellll-bullet">•</label>
+          </li>
+          <li>
+              <label for="carousellll-3" class="carousellll-bullet">•</label>
+          </li>
+      </ol>
+  </div>
+</div>
+
+
+
+	
+</main>
+	</p>
+</body>
+</html>
